@@ -12,14 +12,14 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 //set up sessions
-const sess = {
+// const sess = {
 
-}
+// }
 
-app.use(session(sess));
+// app.use(session(sess));
 
-//what does this do?
-const hbs = exphbs.create({helpers})
+
+const hbs = exphbs.create({})
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
