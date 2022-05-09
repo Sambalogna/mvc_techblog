@@ -7,4 +7,4 @@ const { User } = require('../../models');
 
 
 //Login 
-
+router.post('/');

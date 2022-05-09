@@ -1,7 +1,7 @@
 
 const router =  require('express').Router();
-//inser models into const below
-//const {} = require('../models');
+const {User, Comment, Blog} = require('../models');
+
 
 router.get('/',(req, res)=> {
         res.render('homepage')
