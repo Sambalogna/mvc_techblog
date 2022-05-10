@@ -13,9 +13,9 @@
     <nav> 
         <a href="/">Home</a>
         {{!-- if/else handlebars for login and logout based on user login status --}}
-        {{#if loggedIn}}
+        {{#if logged_in}}
+        <a href="/dashboard">Dashboard</a> |
         <button id="logout">Logout</button>
-        <a href="/dashboard">Dashboard</a>
         {{else}}
         <a href="/login">Login</a>
         {{/if}}
@@ -25,8 +25,8 @@
             {{{body}}}
         </div>
     </main>
-    {{#if loggedIn}}
-    <script src="/public/js/logout.js"></script>
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
     {{/if}}
 </body>
 </html>
